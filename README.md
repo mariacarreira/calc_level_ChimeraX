@@ -18,7 +18,7 @@ Then open the ChimeraX GUI and execute the following commands in the ChimeraX co
 
 ```
 pip install torch (if not already installed in your ChimeraX environment)
-open map (specify map path) 
+open map(s) (*mrc format) 
 open calc_level_ChimeraX/calc_level.py 
 volume calc_level #1 (e.g., for multiple maps, volume calc_level #1,2 or volume calc_level #1-5)
 ```
