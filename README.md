@@ -15,8 +15,8 @@ tar -xzvf weights.tar.gz
 
 To predict the isosurface level for density maps and visualize them at those levels, start by installing ChimeraX (instructions [here](https://www.cgl.ucsf.edu/chimera/download.html)).
 Then open the ChimeraX GUI and execute the following commands in the ChimeraX command line:
-
 ```
+xcode-select --install (for MacOS users to run on the terminal, if required)
 pip install torch (if not already installed in your ChimeraX environment)
 open map(s) (*mrc format) 
 open calc_level_ChimeraX/calc_level.py 
