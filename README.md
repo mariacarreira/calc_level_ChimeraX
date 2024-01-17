@@ -20,7 +20,7 @@ If necessary, ore details on installing ChimeraX environments can be found [here
 
 To predict the isosurface level for density maps and visualize them at those levels, open the ChimeraX GUI and execute the following commands in the ChimeraX command line:
 ```
-pip install torch (if not already installed in your ChimeraX environment)
+pip install torch (in case this error message appears ''ModuleNotFoundError: No module named 'torch''')
 open map(s) (*mrc format) 
 open calc_level_ChimeraX/calc_level.py 
 volume calc_level #1 (e.g., for multiple maps, volume calc_level #1,2 or volume calc_level #1-5)
