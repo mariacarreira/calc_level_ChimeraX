@@ -14,7 +14,7 @@ Then, install ChimeraX (instructions [here](https://www.cgl.ucsf.edu/chimera/dow
 ```
 xcode-select --install
 ```
-If necessary, ore details on installing ChimeraX environments can be found [here](https://www.cgl.ucsf.edu/chimerax/docs/devel/environment.html).
+If necessary, more details on installing ChimeraX environments can be found [here](https://www.cgl.ucsf.edu/chimerax/docs/devel/environment.html).
 
 ## Running  
 
