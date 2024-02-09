@@ -39,7 +39,6 @@ class CNNModel(nn.Module):
                     nn.ReLU(),
                     nn.Linear(in_features=64, out_features=1))
 
-
     def forward(self, x):
         x=x.view(-1, 1, 64, 64, 64)
         x = self.conv(x)
@@ -67,6 +66,17 @@ def downsample(vol):
     vol_d*=((64/boxsize)**3)
     vol_d = vol_d.astype(np.float32)
     return vol_d
+
+def upsample(vol): #through interpolation of maps in Fourier space; based on https://www.sciencedirect.com/science/article/pii/S001046551400335X
+    boxsize = check_boxsize(vol)
+    new_box_size = 64
+    vol_ft = np.fft.fftshift(np.fft.fftn(np.fft.fftshift(vol)))    
+    padded_vol_ft = np.zeros((new_box_size, new_box_size, new_box_size), dtype=np.float32)
+    padded_vol_ft[:vol.shape[0], :vol.shape[1], :vol.shape[2]] = vol_ft
+    interpolated_density_map = np.fft.ifftshift(np.fft.ifftn(np.fft.ifftshift((padded_vol_ft))))
+    interpolated_density_map = interpolated_density_map.real
+    interpolated_density_map*=((64/boxsize)**3)
+    return interpolated_density_map
 
 def normalize(vol_data):
     d_upper = np.percentile(vol_data, 99.999)
@@ -102,11 +112,16 @@ def calc_level_dev(vol_data):
     
     boxsize = check_boxsize(vol_data)
     
-    if boxsize != 64:
+    if boxsize > 64:
         _, vol_min, vol_max = normalize(vol_data)
         vol_d = downsample(vol_data)
         vol_d_norm, _, _ = normalize(vol_d)
     
+    elif boxsize < 64:
+        _, vol_min, vol_max = normalize(vol_data)
+        vol_d = upsample(vol_data)
+        vol_d_norm, _, _ = normalize(vol_d)
+
     else:
         vol_d = vol_data
         vol_d_norm, vol_d_min, vol_d_max = normalize(vol_d)
