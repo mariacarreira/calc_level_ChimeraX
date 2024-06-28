@@ -14,6 +14,7 @@ Then, install ChimeraX (instructions [here](https://www.cgl.ucsf.edu/chimera/dow
 ```
 xcode-select --install
 ```
+
 If necessary, more details on installing ChimeraX environments can be found [here](https://www.cgl.ucsf.edu/chimerax/docs/devel/environment.html).
 
 ## Running  
@@ -21,6 +22,12 @@ If necessary, more details on installing ChimeraX environments can be found [her
 To predict the isosurface level for density maps and visualize them at those levels, open the ChimeraX GUI and execute the following commands in the ChimeraX command line:
 ```
 pip install torch (in case this error message appears "ModuleNotFoundError: No module named 'torch'")
+Note: Windows users might need to run instead (cd XXX):
+
+```
+pip install torch==2.2.1
+```
+
 open map(s) (*.mrc format) 
 open calc_level_ChimeraX/calc_level.py 
 volume calc_level #1 (e.g., for multiple maps, volume calc_level #1,2 or volume calc_level #1-5)
