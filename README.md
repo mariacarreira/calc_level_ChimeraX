@@ -23,9 +23,7 @@ To predict the isosurface level for density maps and visualize them at those lev
 ```
 pip install torch (in case this error message appears "ModuleNotFoundError: No module named 'torch'")
 Note: Windows users might need to run instead (cd C:\Program Files\ChimeraX <version>\bin)
-```
-pip install torch==2.2.1
-```
+  pip install torch==2.2.1
 open map(s) (*.mrc format) 
 open calc_level_ChimeraX/calc_level.py 
 volume calc_level #1 (e.g., for multiple maps, volume calc_level #1,2 or volume calc_level #1-5)
