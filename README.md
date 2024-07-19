@@ -28,11 +28,12 @@ Note: Windows users might need to run instead (cd C:\Program Files\ChimeraX <ver
 ```  
 pip install torch==2.2.1
 ```
-Select ChimeraX Preferences dropdown (on Mac, see UCSF ChimeraX>Settings; on Linux/Windows, see Favorites>Settings), go to **Startup tab**, and add the line below to 'Execute these commands at startup':
+Select ChimeraX Preferences dropdown (on Mac, see UCSF ChimeraX>Settings; on Linux/Windows, see Favorites>Settings), go to **Startup tab**, and add the line below to **'Execute these commands at startup'**:
 
 ```
 open calc_level_ChimeraX/calc_level.py 
 ```
+Close ChimeraX.
 
 ## Running
 To predict the isosurface level for density maps and visualize them at the predicted levels, run:
