@@ -1,5 +1,5 @@
 # calc_level_ChimeraX
-ChimeraX command to predict and visualize isosurface levels for 3D density maps. This tool is based on a 3D CNN initially developed to predict the isosurface levels of 3D density maps required by [SIREn](https://www.github.com/lkinman/SIREn). More details about the 3D CNN and SIREn can be found [here](https://www.github.com/lkinman/SIREn).
+ChimeraX plugin to predict and visualize isosurface levels for 3D density maps. This tool is based on a 3D CNN initially developed to predict the isosurface levels of 3D density maps required by [SIREn](https://www.github.com/lkinman/SIREn). More details about the 3D CNN and SIREn can be found [here](https://www.github.com/lkinman/SIREn).
 
 
 ## Installing  
