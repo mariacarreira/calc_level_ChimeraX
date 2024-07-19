@@ -102,10 +102,10 @@ def model_pred(data_generator):
     with torch.no_grad():
         with torch.cuda.amp.autocast():
             for (idx, x) in enumerate(data_generator):
-                x = x.to(device)
+                x = x.to(device, dtype=torch.float32)
                 prediction = model(x)
                 prediction = (prediction.squeeze(dim=1))
-                pred_list.append(prediction)
+                pred_list.append(prediction.cpu().numpy())
     return pred_list
 
 def calc_level_dev(vol_data):
