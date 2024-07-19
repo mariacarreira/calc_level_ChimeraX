@@ -4,7 +4,7 @@ ChimeraX plugin to predict and visualize isosurface levels for 3D density maps. 
 
 ## Installation (Part 1)
 
-To install the calc_level_ChimeraX code, follow the instructions below:
+To install the calc_level_ChimeraX code, run the commands below in the terminal:
 ```
 git clone https://github.com/mariacarreira/calc_level_ChimeraX.git
 cd calc_level_ChimeraX
