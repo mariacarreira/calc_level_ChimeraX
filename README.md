@@ -10,7 +10,7 @@ git clone https://github.com/mariacarreira/calc_level_ChimeraX.git
 cd calc_level_ChimeraX
 tar -xzvf weights.tar.gz
 ```
-Then, install ChimeraX (instructions [here](https://www.cgl.ucsf.edu/chimera/download.html)). MacOS users might need to run on the terminal:
+If applicable, you will also need to install ChimeraX (instructions [here](https://www.cgl.ucsf.edu/chimera/download.html)). MacOS users might need to run on the terminal:
 ```
 xcode-select --install
 ```
