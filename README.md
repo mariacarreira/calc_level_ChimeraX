@@ -19,7 +19,7 @@ If necessary, more details on installing ChimeraX environments can be found [her
 
 ## Installation (Part 2)  
 
-When running calc_level for the first time, open the ChimeraX GUI and execute the following commands in the ChimeraX command line:
+Open the ChimeraX GUI and execute the following commands in the ChimeraX command line:
 
 ```
 pip install torch (in case this error message appears "ModuleNotFoundError: No module named 'torch'")
