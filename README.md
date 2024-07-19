@@ -41,7 +41,6 @@ To predict the isosurface level for density maps and visualize them at the predi
 ```
 open map(s) (*.mrc format) 
 volume calc_level #1 (e.g., for multiple maps, volume calc_level #1,2 or volume calc_level #1-5)
-
 ```
 
 ## Integration with other software
