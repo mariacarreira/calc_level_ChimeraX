@@ -24,7 +24,7 @@ Open the ChimeraX GUI and execute the following commands in the ChimeraX command
 ```
 pip install torch (in case this error message appears "ModuleNotFoundError: No module named 'torch'")
 ```
-Note: Windows users might need to run instead (cd C:\Program Files\ChimeraX <version>\bin)
+Note: Windows users might need to run the command below inside this directory C:\Program Files\ChimeraX<version>\bin)
 ```  
 pip install torch==2.2.1
 ```
