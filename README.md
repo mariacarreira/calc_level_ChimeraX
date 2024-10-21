@@ -19,24 +19,25 @@ If necessary, more details on installing ChimeraX environments can be found [her
 
 ## Installation (Part 2)  
 
-Open the ChimeraX GUI and execute the following commands in the ChimeraX command line:
+Open the ChimeraX GUI and execute the following commands in the ChimeraX command line, if applicable:
 
+In case this error message appears "ModuleNotFoundError: No module named 'torch'", run:
 ```
-pip install torch (in case this error message appears "ModuleNotFoundError: No module named 'torch'")
+pip install torch 
 ```
-Note: Windows users might need to run the command below inside this directory C:\Program Files\ChimeraX<version>\bin)
+Windows users might need to run the command below inside this directory C:\Program Files\ChimeraX<version>\bin)
 ```  
 pip install torch==2.2.1
 ```
-Select ChimeraX Preferences dropdown (on Mac, see UCSF ChimeraX>Settings; on Linux/Windows, see Favorites>Settings), go to **Startup tab**, and add the line below to **'Execute these commands at startup'**:
+Select the UCSF ChimeraX Preferences dropdown (on Mac, see UCSF ChimeraX>Settings; on Linux/Windows, see Favorites>Settings), go to **Startup tab**, and add the line below to **'Execute these commands at startup'**.:
 
 ```
 open calc_level_ChimeraX/calc_level.py 
 ```
-Close ChimeraX.
+Click 'Save' and close ChimeraX. 
 
 ## Running
-To predict the isosurface level for density maps and visualize them at the predicted levels, run:
+To predict the isosurface level for density maps and visualize them at the predicted levels, re-open ChimeraX and run:
 
 ```
 open map(s) (*.mrc format) 
