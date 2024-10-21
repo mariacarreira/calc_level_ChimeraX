@@ -15,7 +15,7 @@ If applicable, you will also need to install ChimeraX (instructions [here](https
 xcode-select --install
 ```
 
-If necessary, more details on installing ChimeraX environments can be found [here](https://www.cgl.ucsf.edu/chimerax/docs/devel/environment.html).
+If necessary, details on installing ChimeraX environments can be found [here](https://www.cgl.ucsf.edu/chimerax/docs/devel/environment.html).
 
 ## Installation (Part 2)  
 
@@ -29,7 +29,7 @@ Windows users might need to run the command below inside this directory C:\Progr
 ```  
 pip install torch==2.2.1
 ```
-Select the UCSF ChimeraX Preferences dropdown (on Mac, see UCSF ChimeraX>Settings; on Linux/Windows, see Favorites>Settings), go to **Startup tab**, and add the line below to **'Execute these commands at startup'**:
+Select the UCSF ChimeraX Preferences/Settings dropdown (on Mac, see UCSF ChimeraX>Settings; on Linux/Windows, see Favorites>Settings), go to **Startup tab**, and add the line below to **'Execute these commands at startup'**:
 
 ```
 open calc_level_ChimeraX/calc_level.py 
