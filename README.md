@@ -29,7 +29,7 @@ Windows users might need to run the command below inside this directory C:\Progr
 ```  
 pip install torch==2.2.1
 ```
-Select the UCSF ChimeraX Preferences dropdown (on Mac, see UCSF ChimeraX>Settings; on Linux/Windows, see Favorites>Settings), go to **Startup tab**, and add the line below to **'Execute these commands at startup'**.:
+Select the UCSF ChimeraX Preferences dropdown (on Mac, see UCSF ChimeraX>Settings; on Linux/Windows, see Favorites>Settings), go to **Startup tab**, and add the line below to **'Execute these commands at startup'**:
 
 ```
 open calc_level_ChimeraX/calc_level.py 
