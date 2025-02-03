@@ -19,9 +19,7 @@ If necessary, details on installing ChimeraX environments can be found [here](ht
 
 ## Installation (Part 2)  
 
-Open the ChimeraX GUI and execute the following commands in the ChimeraX command line, if applicable:
-
-In case this error message appears "ModuleNotFoundError: No module named 'torch'", run:
+Open the ChimeraX GUI and, in case this error message appears "ModuleNotFoundError: No module named 'torch'", run:
 ```
 pip install torch 
 ```
