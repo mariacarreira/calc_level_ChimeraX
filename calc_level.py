@@ -93,7 +93,7 @@ def normalize(vol_data):
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device('cpu')
 model = CNNModel()
 dir = os.path.dirname(os.path.abspath(__file__))
-checkpoint = torch.load(os.path.join(dir, 'weights_5e6.pth'), map_location = device)
+checkpoint = torch.load(os.path.join(dir, 'weights_5e6.pth'), weights_only=True, map_location = device)
 model.load_state_dict(checkpoint['model_state_dict'])
 
 def model_pred(data_generator):
