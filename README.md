@@ -32,18 +32,31 @@ Select the UCSF ChimeraX Preferences/Settings dropdown (on Mac, see UCSF Chimera
 ```
 open calc_level_ChimeraX/calc_level.py 
 ```
-Click 'Save' and close ChimeraX. 
+Click 'Save' 
 
 ## Running (Part 3)
 To predict the isosurface level for density maps and visualize them at the predicted levels, re-open ChimeraX and run:
 
 ```
 open map(s) (*.mrc format) 
-volume calc_level #1 (e.g., for multiple maps, volume calc_level #1,2 or volume calc_level #1-5)
+volume calc_level #1 (for multiple maps, volume calc_level #1,2 or volume calc_level #1-5)
 ```
 
 ## Integration with other software
 
 The predicted isosurface levels (a.k.a. binarization thresholds) can be provided to other downstream electron microscopy tools, including [SIREn](https://www.github.com/lkinman/SIREn) and [MAVEn](https://www.github.com/lkinman/MAVEn).
 
+
+## Citing
+
+If the 3D-CNN predictions are useful to your work, you can cite the paper below:
+```bibtex
+@article {2024.10.08.617123,
+	author = {Kinman LF*, Carreira MV*, Powell BM, Davis JH},
+	title = {Automated model-free analysis of cryo-EM volume ensembles with SIREn},
+	year = {2024},
+	doi = {10.1101/2024.10.08.617123},
+	journal = {bioRxiv}
+}
+```
 
