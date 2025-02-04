@@ -1,21 +1,23 @@
 # calc_level_ChimeraX
-ChimeraX plugin to predict and visualize isosurface levels for 3D density maps. This tool is based on a 3D CNN initially developed to predict the isosurface levels of 3D density maps, as required by [SIREn](https://www.github.com/lkinman/SIREn). More details about the 3D CNN and SIREn can be found [here](https://www.github.com/lkinman/SIREn).
+ChimeraX plugin to predict and visualize isosurface levels for 3D density maps. This tool is based on a 3D-CNN initially developed to predict the isosurface levels of 3D density maps, as required by [SIREn](https://www.github.com/lkinman/SIREn). More details about the 3D-CNN and SIREn can be found [here](https://www.github.com/lkinman/SIREn).
 
 
 ## Installation (Part 1)
 
-To install the calc_level_ChimeraX code, run the commands below in the terminal:
+First, make sure you have installed ChimeraX (instructions [here](https://www.cgl.ucsf.edu/chimera/download.html)).
+If necessary, details on installing ChimeraX environments can be found [here](https://www.cgl.ucsf.edu/chimerax/docs/devel/environment.html).
+
+Run the commands below in the terminal:
 ```
 git clone https://github.com/mariacarreira/calc_level_ChimeraX.git
 cd calc_level_ChimeraX
 tar -xzvf weights.tar.gz
 ```
-If applicable, you will also need to install ChimeraX (instructions [here](https://www.cgl.ucsf.edu/chimera/download.html)). MacOS users might need to run on the terminal:
+
+MacOS users might need to run on the terminal:
 ```
 xcode-select --install
 ```
-
-If necessary, details on installing ChimeraX environments can be found [here](https://www.cgl.ucsf.edu/chimerax/docs/devel/environment.html).
 
 ## Installation (Part 2)  
 
