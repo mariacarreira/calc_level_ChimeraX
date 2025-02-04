@@ -37,7 +37,7 @@ open calc_level_ChimeraX/calc_level.py
 Click 'Save' 
 
 ## Running (Part 3)
-To predict the isosurface level for density maps and visualize them at the predicted levels, re-open ChimeraX and run:
+To predict the isosurface level for density maps and visualize them at the predicted levels, on the ChimeraX GUI, type:
 
 ```
 open map(s) (*.mrc format) 
