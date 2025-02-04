@@ -7,12 +7,12 @@ ChimeraX plugin to predict and visualize isosurface levels for 3D density maps. 
 Before you get started, make sure you have installed ChimeraX (instructions [here](https://www.cgl.ucsf.edu/chimera/download.html)). 
 If necessary, details on installing ChimeraX environments can be found [here](https://www.cgl.ucsf.edu/chimerax/docs/devel/environment.html).
 
-MacOS users might need to run on the terminal:
+MacOS users might need to run the command below from the terminal:
 ```
 xcode-select --install
 ```
 
-Run the commands below in the terminal:
+Once you have a working ChimeraX version, run the commands below from the terminal:
 ```
 git clone https://github.com/mariacarreira/calc_level_ChimeraX.git
 cd calc_level_ChimeraX
