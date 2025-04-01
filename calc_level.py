@@ -40,7 +40,7 @@ class CNNModel(nn.Module):
                     nn.Linear(in_features=64, out_features=1))
 
     def forward(self, x):
-        x=x.view(-1, 1, 64, 64, 64)
+        x=x.view(-1, 1, 64, 64, 64).to(dtype=torch.float32)
         x = self.conv(x)
         x = x.view(x.size(0), -1)
         x = self.mlp(x)
@@ -91,8 +91,8 @@ def normalize(vol_data):
     return vol_d_norm, vol_d_min, vol_d_max
 
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device('cpu')
-model = CNNModel()
-model = model.to(dtype=torch.float32)
+#model = CNNModel()
+model = CNNModel().to(device, dtype=torch.float32)
 dir = os.path.dirname(os.path.abspath(__file__))
 checkpoint = torch.load(os.path.join(dir, 'weights_5e6.pth'), weights_only=False, map_location = device)
 model.load_state_dict(checkpoint['model_state_dict'])
