@@ -2,7 +2,7 @@
 ChimeraX plugin to predict and visualize isosurface levels for 3D density maps. This tool is based on a 3D-CNN initially developed to predict the isosurface levels of 3D density maps, as required by [SIREn](https://www.github.com/lkinman/SIREn). More details about the 3D-CNN and SIREn can be found [here](https://www.github.com/lkinman/SIREn).
 
 
-## Installation (Part 1)
+## 1. Installation 
 
 Before you get started, make sure you have installed ChimeraX (instructions [here](https://www.cgl.ucsf.edu/chimera/download.html)). 
 If necessary, details on installing ChimeraX environments can be found [here](https://www.cgl.ucsf.edu/chimerax/docs/devel/environment.html).
@@ -12,14 +12,14 @@ MacOS users might need to run the command below from the terminal:
 xcode-select --install
 ```
 
-Once you have a working ChimeraX version, run the commands below from the terminal:
+Once you have a working ChimeraX version, execute the commands below from the terminal:
 ```
 git clone https://github.com/mariacarreira/calc_level_ChimeraX.git
 cd calc_level_ChimeraX
 tar -xzvf weights.tar.gz
 ```
 
-## Installation (Part 2)  
+## 2. Installation 
 
 Open the ChimeraX GUI and, in case this error message appears "ModuleNotFoundError: No module named 'torch'", run:
 ```
@@ -36,8 +36,8 @@ open calc_level_ChimeraX/calc_level.py
 ```
 Click 'Save' 
 
-## Running (Part 3)
-To predict the isosurface level for density maps and visualize them at the predicted levels, on the ChimeraX GUI, type:
+## 3. Running 
+To predict the isosurface level for density maps and visualize them at the predicted levels, on the ChimeraX GUI:
 
 ```
 open map(s) (*.mrc format) 
